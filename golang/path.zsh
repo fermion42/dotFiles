@@ -1,3 +1,5 @@
 #!/bin/sh
-export GOPATH="$PROJECTS/Go"
-export PATH="$PATH:$GOPATH/bin"
+
+export GOPATH=$(go env GOPATH)
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOBIN"

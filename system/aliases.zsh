@@ -17,6 +17,10 @@ alias croot='cd "$(git rev-parse --show-toplevel)"'
 # quick hack to make watch work with aliases
 alias watch='watch '
 
+# Proxy
+alias Connect_Proxy='export http_proxy=http://127.0.0.1:8001 https_proxy=http://127.0.0.1:8001'
+alias Discont_Proxy='unset http_proxy https_proxy'
+
 # open, pbcopy and pbpaste on linux
 if [ "$(uname -s)" != "Darwin" ]; then
 	if [ -z "$(command -v pbcopy)" ]; then
